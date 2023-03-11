@@ -20,6 +20,19 @@ namespace DemoMvc.Controllers
         {
             return View(db.Students.ToList());
         }
+        public ActionResult Stu()
+        {
+            Student stu = new Student
+            {
+                Id = "1010",
+                Name = "Jimmy",
+                Address = "Việt Nam",
+                Avg = 7,
+                Gender = false
+
+            };
+            return View(stu);
+        }
         public ActionResult Gui()
         {
             return View();

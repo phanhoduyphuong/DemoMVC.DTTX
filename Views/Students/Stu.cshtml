@@ -1,0 +1,14 @@
+﻿@model DemoMvc.Models.Student
+@{
+    ViewBag.Title = "Stu";
+    string gt = Model.Gender == true ? "Nam" : "Nữ";
+}
+
+<h2>Stu</h2>
+<p>Mã số: @Model.Id</p>
+<p>Họ tên: @Model.Name</p>
+<p>Địa chỉ: @Model.Address</p>
+<p>Giới tính: @gt</p>
+<p>Điểm: @Model.Avg</p>
+
+<h2>User: @Session["User"]</h2>

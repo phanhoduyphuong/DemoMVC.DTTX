@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+@{Html.BeginForm("LoginProcess", "Home");}
+    <input type="text" name="username" />
+    <input type="password" name="password" /> 
+    <input type="submit" value="Đăng Nhập" />
+@{Html.EndForm();}

@@ -25,6 +25,9 @@
                     <li>@Html.ActionLink("Liên hệ", "Contact", "Home")</li>
                     <li>@Html.ActionLink("Giảng viên", "Index", "Lucturer")</li>
                     <li>@Html.ActionLink("Phép cộng", "Add", "Home", new { @class = "btn btn-primary" })</li>
+                    <li>@Html.ActionLink("Đăng Nhập", "Login", "Home")</li>
+                    <li>@Html.ActionLink("Đăng Xuất", "Logout", "Home")</li>
+                    <li class="text-danger">Tên đăng nhập:@Session["User"]</li>
                 </ul>
             </div>
         </div>
