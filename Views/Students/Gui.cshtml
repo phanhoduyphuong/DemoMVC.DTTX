@@ -1,0 +1,11 @@
+﻿@model DemoMvc.Models.Student
+@{
+    ViewBag.Title = "Gui";
+}
+
+<h2>Gui</h2>
+@using (Html.BeginForm())
+ {
+       @Html.EditorForModel()
+ }
+

@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+@{ 
+    string d = DateTime.Now.ToShortDateString();
+    string message = "Chào mọi người";
+}
+<p>
+    <h2>Hôm nay là @d</h2>
+    <h1 class="text-capitalize text-danger">@message</h1>
+</p>
+@for(int i = 1; i <= 10; i++)
+ {
+                <p><a href="" class="btn btn-success">Sản phẩm @i</a></p>
+ }

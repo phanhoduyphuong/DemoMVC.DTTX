@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Add";
+    int tong = 0;
+    string message = "";
+    if (IsPost)
+    {
+        int so1 = int.Parse(Request["text1"]);
+        int so2 = int.Parse(Request["text2"]);
+        tong = so1 + so2;
+        message = "Tổng " + so1 + " + " + so2+ " = " + tong;
+    }
+}
+
+<h2>Add</h2>
+<form method="post" action="">
+    Số thứ nhất    
+    <input type="text" name="text1" />
+    Số thứ hai
+    <input type="text" name="text2" />
+    <input type="submit" value="Cộng hai số" />
+</form>
+<p>
+    @message
+</p>
+

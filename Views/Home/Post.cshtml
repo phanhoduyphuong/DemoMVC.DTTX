@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Post";
+    string result = "";
+    if (IsPost)
+    {
+        result = "Trang web được gửi theo giao thức Post";
+
+    }
+    else
+    {
+        result = "Load trang lần đầu tiên";
+    }
+
+}
+<h2>Đây là trang Post</h2>
+<form method="post" action="">
+    <input type="submit" value="Gửi" />
+</form>
+<p>@result</p>
